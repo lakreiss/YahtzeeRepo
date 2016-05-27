@@ -39,10 +39,16 @@ public class Player {
 			}
 		}
 		printCup();
-		System.out.print("What is your play? ");
+		System.out.println("What is your play? ");
+		System.out.println("If you don't type a dice index, it will be assumed that");
+		System.out.print("you are going to submit the dice. ");
 		while (console.hasNextInt()){
 			// -1 for array indexing
 			int inputNum = console.nextInt() - 1;
+			
+			//clears line
+			console.nextLine();
+			
 			if (inputNum >= 0 && inputNum < 5){
 				getCup()[inputNum].toggleIsBeingRolled();
 				printCup();
