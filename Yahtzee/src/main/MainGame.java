@@ -3,20 +3,7 @@ package main;
 import java.util.Scanner;
 
 import categories.Category;
-import categories.lowerSection.Chance;
-import categories.lowerSection.FourOfAKind;
-import categories.lowerSection.FullHouse;
-import categories.lowerSection.LargeStraight;
 import categories.lowerSection.LowerSection;
-import categories.lowerSection.SmallStraight;
-import categories.lowerSection.ThreeOfAKind;
-import categories.lowerSection.Yahtzee;
-import categories.upperSection.Fives;
-import categories.upperSection.Fours;
-import categories.upperSection.Ones;
-import categories.upperSection.Sixes;
-import categories.upperSection.Threes;
-import categories.upperSection.Twos;
 import categories.upperSection.UpperSection;
 
 public class MainGame {
