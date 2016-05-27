@@ -146,6 +146,8 @@ public class MainGame {
 
 	private static void printRules() {
 		System.out.println("type \"roll\" to roll, or the dice number you wish to hold/unhold (1-5)");
+		System.out.println("\"A\" means active (being rolled), \"I\" means inactive (not being rolled)");
+		System.out.println();
 		System.out.println("the possible categories to submit your dice to are:");
 		printCategories();
 	}
@@ -155,6 +157,7 @@ public class MainGame {
 		System.out.println("\tones, twos, threes, fours, fives, sixes");
 		System.out.println("Lower Section: ");
 		System.out.println("\tthreeofakind, fourofakind, fullhouse, smallstraight, largestraight, yahtzee, chance");
+		System.out.println();
 	}
 
 }
