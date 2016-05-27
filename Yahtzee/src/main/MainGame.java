@@ -63,7 +63,6 @@ public class MainGame {
 	}
 
 	private static void playerTurn(Player p, Scanner console) {
-		//TODO delete this comment
 		p.resetCup();
 		boolean turnContinuing = true;
 		int turnCounter = 0;
