@@ -18,10 +18,6 @@ import categories.upperSection.Threes;
 import categories.upperSection.Twos;
 
 public class Player {
-	
-	public static Category[] allCategories = new Category[]{new Ones(), new Twos(), new Threes(), 
-			new Fours(), new Fives(), new Sixes(), new ThreeOfAKind(), new FourOfAKind(), new FullHouse(), 
-			new SmallStraight(), new LargeStraight(), new Yahtzee(), new Chance()};
 
 	private String name;
 	private GameCard gameCard;

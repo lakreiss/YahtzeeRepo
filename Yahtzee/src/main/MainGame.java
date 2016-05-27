@@ -3,7 +3,20 @@ package main;
 import java.util.Scanner;
 
 import categories.Category;
+import categories.lowerSection.Chance;
+import categories.lowerSection.FourOfAKind;
+import categories.lowerSection.FullHouse;
+import categories.lowerSection.LargeStraight;
 import categories.lowerSection.LowerSection;
+import categories.lowerSection.SmallStraight;
+import categories.lowerSection.ThreeOfAKind;
+import categories.lowerSection.Yahtzee;
+import categories.upperSection.Fives;
+import categories.upperSection.Fours;
+import categories.upperSection.Ones;
+import categories.upperSection.Sixes;
+import categories.upperSection.Threes;
+import categories.upperSection.Twos;
 import categories.upperSection.UpperSection;
 
 public class MainGame {
@@ -132,7 +145,17 @@ public class MainGame {
 	}
 
 	private static void printRules() {
-		System.out.println("type \"roll\" to roll, or the dice number you wish to hold/unhold");
+		System.out.println("type \"roll\" to roll, or the dice number you wish to hold/unhold (1-5)");
+		System.out.println("the possible categories to submit your dice to are:");
+		printCategories();
+	}
+
+	private static void printCategories() {
+		System.out.println("Upper Section: ");
+		System.out.println("\tones, twos, threes, fours, fives, sixes");
+		System.out.println("Lower Section: ");
+		System.out.println("\tthreeofakind, fourofakind, fullhouse, smallstraight, largestraight, yahtzee, chance");
+		
 	}
 
 }
