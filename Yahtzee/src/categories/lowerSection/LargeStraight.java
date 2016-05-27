@@ -3,7 +3,7 @@ package categories.lowerSection;
 import java.util.Arrays;
 
 import categories.Category;
-import main.Dice;
+import player.Dice;
 
 public class LargeStraight extends Category implements LowerSection {
 

@@ -1,7 +1,7 @@
 package categories.lowerSection;
 
 import categories.Category;
-import main.Dice;
+import player.Dice;
 
 public class FourOfAKind extends Category implements LowerSection {
 

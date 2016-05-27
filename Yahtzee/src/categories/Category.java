@@ -1,6 +1,6 @@
 package categories;
 
-import main.Dice;
+import player.Dice;
 
 public abstract class Category {
 	private boolean played;

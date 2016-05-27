@@ -5,6 +5,7 @@ import java.util.Scanner;
 import categories.Category;
 import categories.lowerSection.LowerSection;
 import categories.upperSection.UpperSection;
+import player.Player;
 
 public class MainGame {
 

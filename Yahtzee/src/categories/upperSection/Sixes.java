@@ -1,7 +1,7 @@
 package categories.upperSection;
 
 import categories.Category;
-import main.Dice;
+import player.Dice;
 
 public class Sixes extends Category implements UpperSection {
 
