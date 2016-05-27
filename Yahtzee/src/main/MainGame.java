@@ -31,7 +31,18 @@ public class MainGame {
 			}
 		}
 		
-		//TODO print winner
+		int indexOfWinner = 0;
+		int bestScore = playerList[0].getGameCard().getTotalScore();
+		for (int i = 1; i < playerList.length; i++){
+			int playerScore = playerList[i].getGameCard().getTotalScore();
+			if (playerScore > bestScore){
+				bestScore = playerScore;
+				indexOfWinner = i;
+			}
+		}
+				
+		System.out.println(playerList[indexOfWinner].getName() + 
+				" wins with a score of " + bestScore + "!!!");
 	}
 	
 	private static boolean eachGameCardIsFull(Player[] playerList) {
