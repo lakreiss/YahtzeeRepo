@@ -141,7 +141,7 @@ public class MainGame {
 
 	private static void printIntro() {
 		System.out.println("Welcome to Yahtzee!");
-		
+		System.out.println();
 	}
 
 	private static void printRules() {
@@ -155,7 +155,6 @@ public class MainGame {
 		System.out.println("\tones, twos, threes, fours, fives, sixes");
 		System.out.println("Lower Section: ");
 		System.out.println("\tthreeofakind, fourofakind, fullhouse, smallstraight, largestraight, yahtzee, chance");
-		
 	}
 
 }
