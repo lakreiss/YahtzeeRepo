@@ -30,6 +30,8 @@ public class MainGame {
 				}
 			}
 		}
+		
+		//TODO print winner
 	}
 	
 	private static boolean eachGameCardIsFull(Player[] playerList) {
