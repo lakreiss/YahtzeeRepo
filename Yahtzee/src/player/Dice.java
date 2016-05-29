@@ -42,8 +42,8 @@ public class Dice implements Comparable<Object>{
 	
 	public String toString(){
 		if (isBeingRolled){
-			return this.value + "(A)"; 
+			return "|" + this.value + " - A|"; 
 		}
-		return this.value + "(I)";
+		return "|" + this.value + " - I|";
 	}
 }

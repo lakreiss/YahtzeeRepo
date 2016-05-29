@@ -9,6 +9,7 @@ public class Player {
 	private String name;
 	private GameCard gameCard;
 	private Dice[] cup;
+	private final String DICE_TOP_AND_BOTTOM_STRING = " -----    -----    -----    -----    -----";;
 	
 	public Player(String name){
 		this.name = name;
@@ -96,32 +97,25 @@ public class Player {
 	}
 
 	public void printCup(){
-		System.out.print("[");
+		System.out.println(DICE_TOP_AND_BOTTOM_STRING);
 		System.out.print(cup[0].toString());
 		for (int i = 1; i < cup.length; i++){
 			System.out.print(", " + cup[i].toString());
-
 		}
-		System.out.print("]");
 		System.out.println();
+		System.out.println(DICE_TOP_AND_BOTTOM_STRING);
+		
+//		System.out.print("[");
+//		for (int i = 1; i < cup.length; i++){
+//			System.out.print(", " + cup[i].toString());
+//		}
+//		System.out.println("]");
 	}
 
 	public void printScoreCard() {
 		System.out.println();
 		System.out.println(getName() + "'s Score Card");
-		System.out.println("Upper Section:");
-		for (Category c : gameCard.getUpperSection()){
-			System.out.print(" " + c.toString());
-		}
-		System.out.println();
-		System.out.println("Lower Section:");
-		for (Category c: gameCard.getLowerSection()){
-			System.out.print(" " + c.toString());
-		}
-		System.out.println();
-		System.out.println("Upper Section subscore: " + gameCard.getUpperSectionScore());
-		System.out.println("Lower Section subscore: " + gameCard.getLowerSectionScore());
-		System.out.println("Total Score: " + gameCard.getTotalScore());
+		System.out.println(getGameCard().toString());
 		System.out.println();
 	}
 

@@ -81,6 +81,9 @@ public class MainGame {
 		boolean turnContinuing = true;
 		int turnCounter = 0;
 		System.out.println();
+		System.out.println("It is " + p.getName() + "'s turn.");
+		System.out.println("This is what " + p.getName() + "'s score card currently looks like:");
+		p.printScoreCard();
 		System.out.println(p.getName() + " rolls the dice");
 		while (turnContinuing){
 			if (turnCounter < 2){
@@ -97,10 +100,11 @@ public class MainGame {
 			} else {
 				//third roll cannot have a nextPlay of roll
 				String nextPlay = p.roll(console);
-				if (p.nextPlayCategory(nextPlay) == null){
+				while (p.nextPlayCategory(nextPlay) == null){
 					System.out.println("Invalid entry. You must choose a category.");
 					System.out.print("Please try again: ");
 					nextPlay = console.nextLine();
+					System.out.println("next play = " + nextPlay);
 				}
 				turnContinuing = false;
 				submitScore(p, nextPlay);
@@ -144,7 +148,7 @@ public class MainGame {
 		System.out.println("Upper Section: ");
 		System.out.println("\tones, twos, threes, fours, fives, sixes");
 		System.out.println("Lower Section: ");
-		System.out.println("\tthreeofakind, fourofakind, fullhouse, smallstraight, largestraight, yahtzee, chance");
+		System.out.println("\tthreeofakind, fourofakind, fullhouse, \n\tsmallstraight, largestraight, yahtzee, chance");
 		System.out.println();
 	}
 

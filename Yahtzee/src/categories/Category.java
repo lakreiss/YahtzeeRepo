@@ -56,6 +56,9 @@ public abstract class Category {
 	}
 	
 	public String toString(){
-		return this.score + ".";
+		if (this.isPlayed()){
+			return this.score + ".";
+		}
+		return "N/A.";
 	}
 }

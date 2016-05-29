@@ -73,4 +73,25 @@ public class GameCard {
 	public int getTotalScore(){
 		return getUpperSectionScore() + getLowerSectionScore();
 	}
+	
+	public String toString(){
+		String gameCardString = "";
+		gameCardString += "Upper Section:\n\t";
+		for (Category c : this.upperSection){
+			gameCardString += " " + c.toString();
+		}
+		gameCardString += "\nLower Section:\n\t";
+		for (Category c: this.lowerSection){
+			
+			//keeps the formatting more concise, easier to read
+			if (c.getCall().equals("smallstraight")){
+				gameCardString += "\n\t";
+			}
+			gameCardString += " " + c.toString();
+		}
+		gameCardString += "\nUpper Section subscore: " + getUpperSectionScore();
+		gameCardString += "\nLower Section subscore: " + getLowerSectionScore();
+		gameCardString += "\nTotal Score: " + getTotalScore();
+		return gameCardString;
+	}
 }
